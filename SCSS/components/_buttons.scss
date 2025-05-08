@@ -1,0 +1,92 @@
+// header
+
+.header__search-button {
+    padding: auto;
+    margin: 0.5rem;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    
+    &:hover {
+        background-color: $bg-secondary-color;
+    }
+}
+
+// cards
+
+.card__button {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 8px;
+    background-color: $bg-secondary-color;
+    color: $text-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.4s ease;
+
+
+    &:hover {
+        background-color: $primary-color;
+        box-shadow: 0 0 12px 4px lighten($accent-color, 20%);
+    }
+}
+
+// footer
+
+.footer__button {
+    padding: 5px;
+    font-size: $font-size-small-ft;
+    background-color: $color-primary-ft;
+    border: none;
+    border-radius: 5px;
+    color: $color-text-light-ft;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+
+    &:hover {
+        background-color: $color-button-hover-ft;
+    }
+}
+
+// contact
+
+.contact__button {
+    background-color: $secondary-color;//cambiar color
+    color: $text-color; 
+    border: none;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 15px $primary-color;
+        background: darken($primary-color, 10%);//cambiar
+    }
+}
+
+// menu lateral
+
+.btn {
+    display: none;
+    min-width: 2rem;
+    border: none;
+    border-radius: 5px;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        display: block;
+    }
+}
+
+// footer icons
+.footer__list-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    margin: $spacing-small-ft;
+}

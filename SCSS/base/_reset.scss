@@ -1,0 +1,28 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    line-height: 1.5;
+    //width: 100%;  cambio nuevo
+}
+
+
+// Header
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    @include create-container-width();
+}
+
+h1, h3 {
+    margin: 0;
+}

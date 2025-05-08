@@ -1,0 +1,104 @@
+
+.main-content--ct {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 3rem auto;
+    margin-top: 0;
+    
+    &__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba($background-color, 0.5);
+        border: none;
+        border-radius: 8px;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    &__label {
+        padding: 2px;
+        margin: 0.5rem 0.2rem;
+        display: block;
+        &[required] {
+            &::after {
+                content: ' (*)';
+                color: $danger-color;
+            }
+        }
+    }
+    
+    &__input,
+    &__textarea {
+        padding: 0.5rem;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        background: $background;
+        resize: vertical;
+        color: $text-color;
+        transition: all 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 0 15px $accent-color;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $secondary-color-alta;
+            box-shadow: 0 0 8px $primary-color;
+        }
+    }
+
+    &__input::placeholder,
+    &__textarea::placeholder {
+        color: $text-color;
+    }
+    
+    
+}
+
+#form-messages {
+    margin-top: 1rem;
+}
+
+.contact__input { //nuevo
+    &.with-error {
+        border: 30px;
+        border-color: $danger-color;
+    }
+    &:focus-visible {
+        outline-color: $secondary-color;
+    }
+}
+
+//nuevo <span>
+.contact__error {
+    color: $danger-color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__submit {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+

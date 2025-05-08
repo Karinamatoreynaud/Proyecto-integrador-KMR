@@ -1,0 +1,38 @@
+
+.menu__container {
+    display: none;
+    
+    &-visible {
+        background-color: $bg-secondary-color;
+        padding-right: 1rem;
+        height: 100%; //ver esto
+        position: fixed;
+        left: 0;
+        z-index: 1;
+        display: block;
+
+        @media screen and (min-width: map-get($grid-breakpoints, md)) {
+            display: none;
+        }
+        
+        .menu__nav{
+            .menu__list {
+                flex-direction: column; //para que tome el gap
+                gap: 2rem;
+        
+                .menu__list-item {
+                    list-style: none;
+        
+                    .menu__list-link {
+                        text-decoration: none;
+                        color: $text-color;
+        
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

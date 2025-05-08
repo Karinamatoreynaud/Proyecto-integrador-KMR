@@ -1,0 +1,12 @@
+// grid esto estaba en cards
+.cards__container {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    //margin: 0 4rem;
+    //align-content: center;
+    //nuevo
+    //width: 100%;
+    
+}

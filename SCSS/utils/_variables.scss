@@ -1,0 +1,110 @@
+
+$grid-columns: 12;
+
+//breakpoints
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+
+);
+
+$grid-width: (
+  xs: 100%, //360
+  sm: 540px, //520
+  md: 720px, //720
+  lg: 960px, //880
+  xl: 1140px, //1120
+  xxl: 1280px //1280
+);
+
+//para el header
+
+$header-font-w: (
+  xs: 16px,
+  sm: 18px,
+  md: 20px,
+  lg: 22px,
+  xl: 26px,
+  xxl: 32px
+);
+
+
+// alta
+$primary-color-alta: #6a0dad;
+$secondary-color-alta: #ff69b4;
+$accent-color-alta: #00ffff;
+$background-color-alta: #0b0c2a;
+$text-color-alta: #ffffffee;
+$card-bg-alta: #1a1c3c;
+$shadow-color-alta: rgba(255, 255, 255, 0.3);
+
+
+// footer
+
+$color-primary-ft: #ff6f61;
+$color-background-ft: #2a2a2a;
+$color-text-light-ft: #fffeee;
+$color-text-dark-ft: #999;
+$color-button-hover-ft: #d84f47;
+$color-input-background-ft: #333;
+
+$font-size-small-ft: 0.7rem;
+$font-size-medium-ft: 0.9rem;
+$font-size-large-ft: 1rem;
+$font-weigth-bold-ft: bold;
+
+$spacing-small-ft: 0.3rem;
+$spacing-medium-ft: 0.7rem;
+$spacing-large-ft: 1rem;
+$spacing-xlarge-ft: 10px;
+
+$max-width-ft: 1200px;
+
+// general
+// https://coolors.co/2b2d3c-d61c5e-6a4c9c-b56cbf-f1c40f
+
+$primary-color: #D61C5E;
+$secondary-color: #6A4C9C;
+$background-color: #2B2D3C;
+$bg-secondary-color: #B56CBF;
+$accent-color: #F1C40F;
+$text-color: #fffeee;
+$tx-secondary-color: #F1C40F;
+$background: radial-gradient(circle, $accent-color, $bg-secondary-color 60%, $background-color 90%);
+
+$success-color: #13d913;
+$danger-color: #9a1313;
+$warning-color: #ffff2d; 
+
+// header
+
+$header-bg-color: linear-gradient(180deg, $secondary-color, $primary-color);
+$header-bg-shadow: linear-gradient(45deg, $background-color, $bg-secondary-color, $accent-color);
+
+// spacings
+$spacings: (
+  m: margin,
+  mt: margin-top,
+  mb: margin-bottom,
+  ml: margin-left,
+  mr: margin-right,
+  p: padding,
+  pt: padding-top,
+  pb: padding-bottom,
+  pl: padding-left,
+  pr: padding-right,
+);
+
+// breakpoints
+
+$breakpoints:(
+  'mobile': 768px,
+  'tablet': 1024px,
+  'desktop': 1025px,
+);
+

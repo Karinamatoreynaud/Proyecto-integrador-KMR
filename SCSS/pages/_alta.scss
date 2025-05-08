@@ -1,0 +1,109 @@
+
+.main-content--at {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  // min-height: 100vh;
+}
+
+.main-content__title {
+    text-align: center;
+    color: $text-color-alta; //ver
+    margin-bottom: 2rem;
+    text-shadow: 4px 5px 1.5px rgba($background-color-alta, 0.6);
+}
+  
+.alta {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba($card-bg-alta, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px $background-color-alta;
+  
+  &__label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: $secondary-color-alta;
+    &[required] {
+        &::after {
+            content: ' (*)';
+            color: $danger-color;
+            font-weight: lighter;
+        }
+    }
+  }
+  
+  &__input,
+  &__textarea,
+  &__select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid $accent-color-alta;
+    border-radius: 0.5rem;
+    background-color: $background-color-alta;
+    color: $text-color-alta;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    
+    &.with-error {
+      border-color: $danger-color;
+    }
+
+    &:focus-visible {
+      outline-color: $secondary-color;
+    }
+    
+    &:hover {
+      box-shadow: 0 0 15px $secondary-color-alta;
+    }
+    
+    &:focus {
+      outline: none;
+      border-color: $secondary-color-alta;
+      box-shadow: 0 0 8px $accent-color;
+    }
+  }
+  
+  &__textarea {
+    resize: vertical;
+    min-height: 5rem;
+  }
+  
+  &__checkbox {
+    margin: 10px 0 20px;
+    cursor: pointer;
+  }
+  
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  &__submit,
+  &__reset {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 4px;
+    background-color: $primary-color-alta; //cambiar
+    color: $text-color-alta;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.4s ease;
+    
+    &:hover {
+      background-color: darken($primary-color-alta, 10%);
+      box-shadow: 0 0 12px 4px lighten($accent-color-alta, 20%);
+    }
+  }
+}
+
+.alta__error {
+  color: $danger-color;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+  

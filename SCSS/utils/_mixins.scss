@@ -1,0 +1,43 @@
+
+
+//esto no lo estoy usando
+
+@mixin media-query($size) {
+    $breakpoint: map-get($breakpoints, $size);
+    @if $breakpoint {
+        @media screen and (max-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+// para crear fontsize por cada breakpoint establecido
+
+@mixin create-font-size($font-sizes) {
+    @each $bp, $size in $font-sizes {
+        $breakpoint: map-get($breakpoints, $bp);
+        @if $breakpoint {
+            @media screen and (min-width: $breakpoint) {
+                font-size: $size;;
+            }
+        }
+    }
+}
+ 
+
+// Header
+@mixin create-container-width () {
+    @each $bp, $w in $grid-breakpoints {
+        @media (min-width: $w) {
+            max-width: map-get($grid-width, $bp);
+        }
+    }
+}
+
+@mixin create-header-size() {
+    @each $bp, $w in $grid-breakpoints {
+        @media (min-width: $w) {
+            font-size: map-get($header-font-w, $bp);
+        }
+    }
+}

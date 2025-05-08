@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto | Juguetería Cósmica</title>
+        <link rel="stylesheet" href="SCSS/main.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="header__container container d-flex align-i sp-bt">
+                <a href="index.html">
+                    <img src="/assets/images/Proyecto-logo.png" alt="Logo Jugueteria Cosmica" class="header__logo">
+                </a>
+                <h1 class="header__title">Bienvenidos a Jugueteria Cosmica</h1>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="index.html" class="header__nav-link">Inicio</a></li>
+                        <li class="header__nav-item"><a href="alta.html" class="header__nav-link">Alta</a></li>
+                        <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                        <li class="header__nav-item"><a href="nosotros.html" class="header__nav-link">Nosotros</a></li>
+                    </ul>
+                </nav>
+                
+                <form class="header__search-form" role="search">
+                    <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                    <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
+                </form>
+
+                <button class="btn" onclick="handleMenu()"><img src="/assets/images/icons/bars-solid.svg" alt=""></button>
+            </div>
+        </header> 
+                        
+        <div class="container d-flex">
+            <aside id="mobile__menu" class="menu__container">
+                <nav class="menu__nav">
+                    <ul class="menu__list d-flex">
+                        <li class="menu__list-item"><a href="index.html" class="menu__list-link">Inicio</a></li>
+                        <li class="menu__list-item"><a href="alta.html" class="menu__list-link">Alta</a></li>
+                        <li class="menu__list-item"><a href="contacto.html" class="menu__list-link">Contacto</a></li>
+                        <li class="menu__list-item"><a href="nosotros.html" class="menu__list-link">Nosotros</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="main-content main-content--ct d-flex">
+                <section class="contact">
+                    <h1 class="contact__title">Contacto</h1>
+                    <form id="form" class="contact__form" novalidate  onsubmit="contactSubmit(event)"> <!-- ver -->
+
+                        <label class="contact__label" for="name" required>Nombre:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="Nombre completo">
+                        <span id="name-error" class="contact__error"></span> <!-- nuevos los span-->
+                        
+                        <label class="contact__label" for="email" required>Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="ejemplo@correo.com">
+                        <span id="email-error" class="contact__error"></span>
+                       
+                        <label class="contact__label" for="subject" required>Asunto</label>
+                        <input class="contact__input" type="text" name="subject" id="subject">
+                        <span id="subject-error" class="contact__error"></span>
+                       
+                        <label class="contact__label" for="body" required>Comentarios:</label>
+                        <textarea class="contact__textarea" id="body" name="body" rows="4" placeholder="Dejanos tu mensaje..."></textarea>
+                        <span id="body-error" class="contact__error"></span>
+
+                        <button type="submit" class="contact__button">Enviar</button>
+                        <p id="form-messages"></p>
+                    </form>
+                </section>
+            </main>
+        </div>
+    
+        <footer class="footer">
+            <div class="footer__container">
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Nuestras redes sociales</h3>
+                    <ul class="footer__list footer__list-icons">
+                        <li class="footer__item"><a class="footer__link" href="http://facebook.com"><img src="assets/images/icons/square-facebook-brands.svg" alt='facebook'></a></li>
+                        <li class="footer__item"><a class="footer__link" href="http://instagram.com"><img src="assets/images/icons/instagram-brands.svg" alt="instagram"></a></li>
+                        <li class="footer__item"><a class="footer__link" href="#"><img src="/assets/images/icons/whatsapp-brands.svg" alt="whatsapp"></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Novedades</h3>
+                    <form class="footer__form" action="#">
+                        <input class="footer__input" type="email" placeholder="Ingresa tu correo" required>
+                        <button class="footer__button" type="submit">Suscribite</button>
+                    </form>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Paginas y Avisos Legales</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">Condiciones de compra</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Politica de privacidad</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>  
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Informacion de contacto</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">Descripcion de la tienda</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Localizacion</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&copy; 1994 Juguetería Cósmica. Todos los derechos reservados.</p>
+        </footer>
+    
+        <script src="assets/JS/main.js"></script>
+        <script src="assets/JS/contact.js"></script>
+    </body>
+</html>
