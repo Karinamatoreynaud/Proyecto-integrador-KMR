@@ -54,15 +54,15 @@
                     <input class="alta__input" type="text" id="name" name="name" required>
                     <span id="name-error" class="form__error"></span>
                     
-                    <label class="alta__label" for="large_description">Descripción corta:</label>
+                    <label class="alta__label" for="short_description">Descripción corta:</label>
                     <input class="alta__input" type="text" name="short_description" id="short_description">
                     <span id="short_description-error" class="alta__error"></span>
                     
-                    <label for="description" class="alta__label">Descripcion larga:</label>
-                    <textarea id="large_description" name="large_description" class="alta__textarea"></textarea>
+                    <label class="alta__label" for="large_description">Descripcion larga:</label>
+                    <textarea class="alta__textarea" name="large_description" id="large_description"></textarea>
                     <span id="name-error" class="form__error"></span>
 
-                    <label for="category" class="alta__label" required>Categoria</label>
+                    <label class="alta__label" for="category" required>Categoria</label>
                     <select name="category" id="category" class="alta__select" required>
                         <option value="">Seleccionar</option>
                         <option value="LEGO">LEGO</option>
@@ -84,7 +84,7 @@
                     <input class="alta__input" type="file" name="image" id="image">
                     <span id="image-error" class="alta__error"></span>
                 
-                    <label for="price" class="alta__label" required>Precio:</label>
+                    <label class="alta__label" for="price" required>Precio:</label>
                     <input class="alta__input" type="number" id="price" name="price" required>
                     <span id="price-error" class="alta__error"></span>
 
@@ -95,8 +95,8 @@
                     <label for="stock" class="alta__label" required>Stock disponible:</label>
                     <input class="alta__input" type="number" id="stock" name="stock" required>
                 
-                    <label for="shipping" class="alta__label">Envio sin cargo:</label>
-                    <input type="checkbox" id="shipping" name="shipping" class="alta__checkbox">
+                    <label class="alta__label" for="free_delivery">Envio sin cargo:</label>
+                    <input type="checkbox" id="free_delivery" name="free_delivery" class="alta__checkbox">
 
                     <div class="alta__buttons">
                         <button class="alta__submit" type="submit">Agregar producto</button>
