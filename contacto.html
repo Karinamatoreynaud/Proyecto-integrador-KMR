@@ -23,13 +23,13 @@
                         <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
                         <li class="header__nav-item"><a href="nosotros.html" class="header__nav-link">Nosotros</a></li>
                     </ul>
-                    <form class="header__search-form" role="search">
-                        <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                    <form class="header__search-form" role="search" id="header__search-form"> <!-- id nuevo -->
+                        <input type="search" id="search-input-header" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
                         <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
                     </form>
                 </nav>
                 
-                <button class="btn" onclick="handleMenu()"><img src="/assets/images/icons/bars-solid.svg" alt=""></button>
+                <button class="btn" onclick="handleMenu()"><img src="assets/images/icons/bars-solid.svg" alt=""></button>
             </div>
         </header> 
         
@@ -43,8 +43,8 @@
                         <li class="menu__list-item"><a href="nosotros.html" class="menu__list-link">Nosotros</a></li>
                     </ul>
                 </nav>
-                <form class="header__search-form" role="search">
-                    <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                <form class="header__search-form" role="search" id="aside__search-form"> <!-- id nuevo -->
+                    <input type="search" id="search-input-aside" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
                     <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
                 </form>
             </aside>
@@ -54,20 +54,20 @@
                     <h1 class="contact__title">Contacto</h1>
                     <form id="form" class="contact__form" novalidate  onsubmit="contactSubmit(event)"> <!-- ver -->
 
-                        <label class="contact__label" for="name" required>Nombre:</label>
-                        <input class="contact__input" type="text" name="name" id="name" placeholder="Nombre completo">
+                        <label class="contact__label" for="name">Nombre:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="Nombre completo" required>
                         <span id="name-error" class="contact__error"></span> <!-- nuevos los span-->
                         
-                        <label class="contact__label" for="email" required>Email:</label>
-                        <input class="contact__input" type="email" name="email" id="email" placeholder="ejemplo@correo.com">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
                         <span id="email-error" class="contact__error"></span>
                        
-                        <label class="contact__label" for="subject" required>Asunto</label>
-                        <input class="contact__input" type="text" name="subject" id="subject">
+                        <label class="contact__label" for="subject">Asunto</label>
+                        <input class="contact__input" type="text" name="subject" id="subject" required>
                         <span id="subject-error" class="contact__error"></span>
                        
-                        <label class="contact__label" for="body" required>Comentarios:</label>
-                        <textarea class="contact__textarea" id="body" name="body" rows="4" placeholder="Dejanos tu mensaje..."></textarea>
+                        <label class="contact__label" for="body">Comentarios:</label>
+                        <textarea class="contact__textarea" id="body" name="body" rows="4" placeholder="Dejanos tu mensaje..." required></textarea>
                         <span id="body-error" class="contact__error"></span>
 
                         <button type="submit" class="contact__button">Enviar</button>
@@ -85,13 +85,13 @@
                     <ul class="footer__list footer__list-icons">
                         <li class="footer__item"><a class="footer__link" href="http://facebook.com"><img src="assets/images/icons/square-facebook-brands.svg" alt='facebook'></a></li>
                         <li class="footer__item"><a class="footer__link" href="http://instagram.com"><img src="assets/images/icons/instagram-brands.svg" alt="instagram"></a></li>
-                        <li class="footer__item"><a class="footer__link" href="#"><img src="/assets/images/icons/whatsapp-brands.svg" alt="whatsapp"></a></li>
+                        <li class="footer__item"><a class="footer__link" href="#"><img src="assets/images/icons/whatsapp-brands.svg" alt="whatsapp"></a></li>
                     </ul>
                 </div>
 
                 <div class="footer__section">
                     <h3 class="footer__title">Novedades</h3>
-                    <form class="footer__form" action="#">
+                    <form class="footer__form" action="#" id="footer"><!-- id nuevo -->
                         <input class="footer__input" type="email" placeholder="Ingresa tu correo" required>
                         <button class="footer__button" type="submit">Suscribite</button>
                     </form>

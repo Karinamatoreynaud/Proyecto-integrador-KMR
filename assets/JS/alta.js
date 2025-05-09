@@ -14,7 +14,7 @@ const inputsArray = [
     {
         name: "stock",
         validation: value => value > 0,
-        errorText: "El stock ser mayor a cero"
+        errorText: "El stock debe ser mayor a cero"
     }, 
     {
         name: "brand",
@@ -47,7 +47,7 @@ const inputsArray = [
     }, 
 ]
 
-const uploadSubmit = (event) => {
+const altaSubmit = (event) => {
     event.preventDefault()
     const values = {};
     let isValid = true
@@ -59,7 +59,7 @@ const uploadSubmit = (event) => {
         const errorElement = document.getElementById(`${inputName}-error`)
         
         if ( !input.validation || input.validation(fieldElement.value)) {
-            // values[inputName] = fieldElement.type === 'checkbox' ? fieldElement.checked : fieldElement.value
+            values[inputName] = fieldElement.type === 'checkbox' ? fieldElement.checked : fieldElement.value
             if (fieldElement) fieldElement.className = fieldElement.className.replace(' with-error', '')
             if (errorElement) errorElement.innerText = ''
         } else {

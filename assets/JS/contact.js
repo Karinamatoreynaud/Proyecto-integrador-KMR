@@ -1,4 +1,3 @@
-// nuevo clase 5/06
 
 const inputsArray = [
     {

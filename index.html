@@ -21,13 +21,13 @@
                         <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
                         <li class="header__nav-item"><a href="nosotros.html" class="header__nav-link">Nosotros</a></li>
                     </ul>
-                    <form class="header__search-form" role="search">
-                        <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                    <form class="header__search-form" role="search" id="header__search-form"> <!-- id nuevo -->
+                        <input type="search" id="search-input-header" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
                         <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
                     </form>
                 </nav>
                 
-                <button class="btn" onclick="handleMenu()"><img src="/assets/images/icons/bars-solid.svg" alt=""></button>
+                <button class="btn" onclick="handleMenu()"><img src="assets/images/icons/bars-solid.svg" alt=""></button>
             </div>
         </header> 
         
@@ -41,8 +41,8 @@
                         <li class="menu__list-item"><a href="nosotros.html" class="menu__list-link">Nosotros</a></li>
                     </ul>
                 </nav>
-                <form class="header__search-form" role="search">
-                    <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                <form class="header__search-form" role="search" id="aside__search-form"> <!-- id nuevo -->
+                    <input type="search" id="search-input-aside" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
                     <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
                 </form>
             </aside>
@@ -258,7 +258,7 @@
 
                 <div class="footer__section">
                     <h3 class="footer__title">Novedades</h3>
-                    <form class="footer__form" action="#">
+                    <form class="footer__form" action="#" id="footer"><!-- id nuevo -->
                         <input class="footer__input" type="email" placeholder="Ingresa tu correo" required>
                         <button class="footer__button" type="submit">Suscribite</button>
                     </form>
@@ -285,6 +285,6 @@
             <p class="footer__copy">&copy; 1994 Juguetería Cósmica. Todos los derechos reservados.</p>
         </footer>
 
-        <script src="/assets/JS/main.js"></script>
+        <script src="assets/JS/main.js"></script>
     </body>
 </html>
