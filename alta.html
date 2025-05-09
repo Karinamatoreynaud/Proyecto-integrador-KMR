@@ -13,7 +13,7 @@
         <header class="header">
             <div class="header__container container d-flex align-i sp-bt">
                 <a href="index.html">
-                    <img src="/assets/images/Proyecto-logo.png" alt="Logo Jugueteria Cosmica" class="header__logo">
+                    <img src="assets/images/Proyecto-logo.png" alt="Logo Jugueteria Cosmica" class="header__logo">
                 </a>
                 <h1 class="header__title">Bienvenidos a Jugueteria Cosmica</h1>
                 <nav class="header__nav">
@@ -23,18 +23,17 @@
                         <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
                         <li class="header__nav-item"><a href="nosotros.html" class="header__nav-link">Nosotros</a></li>
                     </ul>
+                    <form class="header__search-form" role="search">
+                        <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                        <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
+                    </form>
                 </nav>
                 
-                <form class="header__search-form" role="search">
-                    <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
-                    <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
-                </form>
-
                 <button class="btn" onclick="handleMenu()"><img src="/assets/images/icons/bars-solid.svg" alt=""></button>
             </div>
         </header> 
-
-        <div class="container">
+        
+        <div class="container d-flex">
             <aside id="mobile__menu" class="menu__container">
                 <nav class="menu__nav">
                     <ul class="menu__list d-flex">
@@ -44,13 +43,17 @@
                         <li class="menu__list-item"><a href="nosotros.html" class="menu__list-link">Nosotros</a></li>
                     </ul>
                 </nav>
+                <form class="header__search-form" role="search">
+                    <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                    <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
+                </form>
             </aside>
 
             <main class="main-content main-content--at d-flex">
                 <h1 class="main-content__title">Agregar Producto</h1>
 
                 <form class="alta" onsubmit="uploadSubmit(event)">
-                    <label class="alta__label" for="name" required>Nombre del producto:</label>
+                    <label class="alta__label" for="name">Nombre del producto:</label>
                     <input class="alta__input" type="text" id="name" name="name" required>
                     <span id="name-error" class="form__error"></span>
                     
@@ -60,9 +63,9 @@
                     
                     <label class="alta__label" for="large_description">Descripcion larga:</label>
                     <textarea class="alta__textarea" name="large_description" id="large_description"></textarea>
-                    <span id="name-error" class="form__error"></span>
+                    <span id="large_description-error" class="form__error"></span>
 
-                    <label class="alta__label" for="category" required>Categoria</label>
+                    <label class="alta__label" for="category">Categoria</label>
                     <select name="category" id="category" class="alta__select" required>
                         <option value="">Seleccionar</option>
                         <option value="LEGO">LEGO</option>
@@ -73,26 +76,26 @@
                     <span id="category-error" class="alta__error"></span>
 
                     <label class="alta__label" for="age_from">Edad desde</label>
-                    <input class="alta__input" type="numer" name="age_from" id="age_from">
+                    <input class="alta__input" type="number" name="age_from" id="age_from">
                     <span id="age_from-error" class="alta__error"></span>
                     
                     <label class="alta__label" for="age_to">Edad Hasta</label>
-                    <input class="alta__input" type="numer" name="age_to" id="age_to">
+                    <input class="alta__input" type="number" name="age_to" id="age_to">
                     <span id="age_to-error" class="alta__error"></span>
                     
                     <label class="alta__label" for="image">Imagen</label>
                     <input class="alta__input" type="file" name="image" id="image">
                     <span id="image-error" class="alta__error"></span>
                 
-                    <label class="alta__label" for="price" required>Precio:</label>
+                    <label class="alta__label" for="price">Precio:</label>
                     <input class="alta__input" type="number" id="price" name="price" required>
                     <span id="price-error" class="alta__error"></span>
 
-                    <label class="alta__label" for="brand" required>Marca</label>
-                    <input class="alta__input" type="text" name="brand" id="brand">
+                    <label class="alta__label" for="brand">Marca</label>
+                    <input class="alta__input" type="text" name="brand" id="brand" required>
                     <span id="brand-error" class="alta__error"></span>
                 
-                    <label for="stock" class="alta__label" required>Stock disponible:</label>
+                    <label for="stock" class="alta__label">Stock disponible:</label>
                     <input class="alta__input" type="number" id="stock" name="stock" required>
                 
                     <label class="alta__label" for="free_delivery">Envio sin cargo:</label>
@@ -121,7 +124,7 @@
                 <div class="footer__section">
                     <h3 class="footer__title">Novedades</h3>
                     <form class="footer__form" action="#">
-                        <input class="footer__input" type="email" placeholder="Ingresa tu correo" required>
+                        <input class="footer__input" type="email" placeholder="Ingresa tu correo">
                         <button class="footer__button" type="submit">Suscribite</button>
                     </form>
                 </div>

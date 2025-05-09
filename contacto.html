@@ -13,7 +13,7 @@
         <header class="header">
             <div class="header__container container d-flex align-i sp-bt">
                 <a href="index.html">
-                    <img src="/assets/images/Proyecto-logo.png" alt="Logo Jugueteria Cosmica" class="header__logo">
+                    <img src="assets/images/Proyecto-logo.png" alt="Logo Jugueteria Cosmica" class="header__logo">
                 </a>
                 <h1 class="header__title">Bienvenidos a Jugueteria Cosmica</h1>
                 <nav class="header__nav">
@@ -23,17 +23,16 @@
                         <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
                         <li class="header__nav-item"><a href="nosotros.html" class="header__nav-link">Nosotros</a></li>
                     </ul>
+                    <form class="header__search-form" role="search">
+                        <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                        <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
+                    </form>
                 </nav>
                 
-                <form class="header__search-form" role="search">
-                    <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
-                    <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
-                </form>
-
                 <button class="btn" onclick="handleMenu()"><img src="/assets/images/icons/bars-solid.svg" alt=""></button>
             </div>
         </header> 
-                        
+        
         <div class="container d-flex">
             <aside id="mobile__menu" class="menu__container">
                 <nav class="menu__nav">
@@ -44,6 +43,10 @@
                         <li class="menu__list-item"><a href="nosotros.html" class="menu__list-link">Nosotros</a></li>
                     </ul>
                 </nav>
+                <form class="header__search-form" role="search">
+                    <input type="search" id="search-input" name="search" class="header__search-input" placeholder="Buscar juguetes..." aria-label="Buscar juguetes">
+                    <button type="submit" class="header__search-button" aria-label="Buscar">🔍</button>
+                </form>
             </aside>
 
             <main class="main-content main-content--ct d-flex">

@@ -59,7 +59,7 @@ const uploadSubmit = (event) => {
         const errorElement = document.getElementById(`${inputName}-error`)
         
         if ( !input.validation || input.validation(fieldElement.value)) {
-            values[inputName] = fieldElement.type === 'checkbox' ? fieldElement.checked : fieldElement.value
+            // values[inputName] = fieldElement.type === 'checkbox' ? fieldElement.checked : fieldElement.value
             if (fieldElement) fieldElement.className = fieldElement.className.replace(' with-error', '')
             if (errorElement) errorElement.innerText = ''
         } else {

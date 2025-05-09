@@ -1,15 +1,14 @@
 
 .main-content--at {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 2rem;
-  // min-height: 100vh;
 }
 
 .main-content__title {
     text-align: center;
-    color: $text-color-alta; //ver
+    color: $text-color-alta;
     margin-bottom: 2rem;
     text-shadow: 4px 5px 1.5px rgba($background-color-alta, 0.6);
 }

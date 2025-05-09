@@ -34,6 +34,3 @@ const handleMenu = () => {
 }
 
 
-// preguntar que NO me muestra el menu lat cuando esta amplia
-// 
-//  en nosotros
