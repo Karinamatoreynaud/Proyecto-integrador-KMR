@@ -52,8 +52,7 @@
 // contact
 
 .contact__button {
-    background-color: $secondary-color;//cambiar color
-    color: $text-color; 
+    background-color: $secondary-color;
     border: none;
     margin: auto;
     margin-top: 3rem;
@@ -64,7 +63,7 @@
 
     &:hover {
         box-shadow: 0 0 15px $primary-color;
-        background: darken($primary-color, 10%);//cambiar
+        background: darken($primary-color, 10%);
     }
 }
 

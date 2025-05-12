@@ -743,6 +743,7 @@ main {
   margin-top: 2rem;
   padding: 0.3rem;
   text-align: center;
+  bottom: 0;
 }
 .footer__container {
   display: flex;
@@ -892,10 +893,6 @@ main {
   width: 40rem;
   height: 3px;
   background-color: #fffeee;
-}
-
-.section__porEdad {
-  margin: 3rem;
 }
 
 .card__grid {
@@ -1498,7 +1495,6 @@ main {
 
 .contact__button {
   background-color: #6A4C9C;
-  color: #fffeee;
   border: none;
   margin: auto;
   margin-top: 3rem;

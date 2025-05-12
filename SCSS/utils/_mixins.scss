@@ -1,7 +1,4 @@
 
-
-//esto no lo estoy usando
-
 @mixin media-query($size) {
     $breakpoint: map-get($breakpoints, $size);
     @if $breakpoint {

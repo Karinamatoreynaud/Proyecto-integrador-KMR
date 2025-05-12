@@ -19,7 +19,6 @@
         @include create-container-width();
         display: flex;
         align-items: center;
-        // justify-content: space-between;
     }
 
     &__logo {
@@ -33,10 +32,6 @@
         font-size: 1rem;
         
         @include create-header-size();
-
-        // @media (max-width: 1200px) {
-        //     font-size: 1.5rem;
-        // }
 
         @media (max-width:1200px) {
             display: none;

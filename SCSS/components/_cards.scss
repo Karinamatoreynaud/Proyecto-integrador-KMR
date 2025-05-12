@@ -43,15 +43,11 @@
 
 }
 
-.section__porEdad {
-    margin: 3rem;
-}
-
 .card__grid {
     display: flex;
     width: 240px;
 
-    transition: transform 0.5s ease-in-out; //ver
+    transition: transform 0.5s ease-in-out; 
 
     &:hover {
         transform: scale3d(1.05, 1.05, 1);
